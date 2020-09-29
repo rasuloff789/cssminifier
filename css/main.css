@@ -1,0 +1,163 @@
+.container:first-child{
+  max-width: 1350px;
+  padding: 0 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+.first-container ,.second-container{
+  display: flex;
+  width: 100%;
+  max-width: 49%;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+textarea{
+  width: 90%;
+  resize: none;
+  background-color: #222;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: auto;
+}
+.inputText{
+
+  border: 3px solid red;
+}
+
+.jpgImage{
+  border: 3px solid green;
+}
+
+.buttons{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 50%;
+  width: 100%;
+}
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  border: 3px solid #39a763;
+  background-color: #fff;
+  color: #616161;
+  font-size: 20px;
+  transition: color 0.4s ease,
+  background-color 0.4s ease,
+  transform ease 0.4s;
+  font-weight: bold;
+}
+.btn:hover{
+  background-color: #39a763;
+  color: #222;
+  transform: scale(1.2);
+}
+.btn  img{
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover img{
+  transform: rotate(270deg);
+}
+
+.remove{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 3px solid red;
+  transition: color ease 0.4s , background-color ease 0.4s,
+  transform ease 0.4s;
+}
+
+.remove:hover{
+  transform: scale(1.2);
+  color: #fff;
+  background-color: red;
+}
+.btn_copy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 16px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: transform 0.4s ease;
+}
+
+.btn_copy:hover{
+  transform: scale(1.2);
+}
+
+.container:nth-child(2){
+  max-width: 1350px;
+  padding: 0 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.heading{
+  font-size: 45px;
+}
+
+.text{
+  justify-self: center;
+  align-self: center;
+  font-family: "Roboto" , "Arial" , sans-serif;
+  font-size: 30px;
+  color: rgb(0, 255, 221);
+}
+
+@media only screen and (max-width:1150px){
+  .buttons{
+    max-width: 75%;
+  }
+}
+
+@media only screen and (max-width:870px){
+  .container:first-child{
+    flex-direction: column;
+  }
+  .first-container ,.second-container{
+    max-width: 100%;
+
+  }
+.first-container{
+  margin-bottom: 25px;
+}
+  textarea{
+    width: 99%;
+  }
+
+  .buttons{
+    align-self: center;
+  }
+  .btn_copy{
+    align-self: center;
+    margin-top: 10px;
+  }
+}
+
