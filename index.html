@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+
+<div class="first-container">
+  <textarea name="text" id="none"  cols="30"  class="inputText" rows="10"></textarea>
+<div class="buttons">
+  <button class="btn" type="button" onclick="generateFunction()">
+    <img src="img/cached-black-18dp.svg" width="24" height="24" alt="">
+  <span>minify</span></button>
+
+  <button onclick="remove()" class="remove">
+<img src="img/delete_forever-24px.svg" alt="" width="24" height="24">
+  <span>
+    remove
+  </span></button>
+</div>
+</div>
+<div class="second-container">
+  <textarea  class="jpgImage" cols="30"   rows="10">
+  </textarea>
+  <button title="Copy to clipboard" onclick="copyFc()" class="btn_copy">
+    <img src="img/content_copy-24px.svg" width="24" height="24" alt="">
+  
+</button>
+</div>
+</div>
+<div class="container">
+  <h2 class="heading">
+    Simple CSS minifier  :) 
+  </h2>
+  <p class="text">
+    by Rasul Ismoilov
+  </p>
+</div>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>
